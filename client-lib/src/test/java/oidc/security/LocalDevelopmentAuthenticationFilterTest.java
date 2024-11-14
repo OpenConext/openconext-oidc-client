@@ -22,6 +22,7 @@ class LocalDevelopmentAuthenticationFilterTest {
         new LocalDevelopmentAuthenticationFilter()
                 .doFilter(new MockHttpServletRequest(), new MockHttpServletResponse(), new MockFilterChain());
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-        assertEquals(((DefaultOidcUser)authentication.getPrincipal()).getClaims().get("sub"),"urn:collab:person:example.com:super");
+        Object sub = ((DefaultOidcUser) authentication.getPrincipal()).getClaims().get("sub");
+        assertEquals(sub,"urn:collab:person:example.com:super");
     }
 }

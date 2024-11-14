@@ -46,7 +46,7 @@ public class UserController {
         request.logout();
         SecurityContextHolder.clearContext();
 
-        return new RedirectView("/api/v1/users/me", true);
+        return new RedirectView("/api/v1/users/me?force=true", true);
     }
 
 

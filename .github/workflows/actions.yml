@@ -19,6 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Set up JDK 21
+        working-directory: ./client-lib
         uses: actions/setup-java@v4
         with:
           java-version: '21'
