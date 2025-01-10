@@ -77,7 +77,7 @@ class UserControllerTest extends AbstractTest {
                 .contentType(ContentType.JSON)
                 .get("/api/v1/users/logout")
                 .header("Location");
-        assertEquals("http://localhost:" + super.port + "/api/v1/users/me", location);
+        assertEquals("http://localhost:" + super.port + "/api/v1/users/me?force=true", location);
 
         location = given()
                 .when()
