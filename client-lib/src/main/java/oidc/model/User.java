@@ -28,7 +28,7 @@ public class User implements Serializable {
     private Instant lastActivity;
 
     /**
-     * Construct a user. If you miss attributes then just extend thic class
+     * Construct a user. If you miss attributes, then extend this class
      *
      * @param attributes the claims of the user-info endpoint
      */
