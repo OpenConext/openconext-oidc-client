@@ -10,21 +10,21 @@
 
     <groupId>org.openconext</groupId>
     <artifactId>openconext-oidc-client</artifactId>
-    <version>0.0.3</version>
+    <version>0.0.4</version>
     <name>openconext-oidc-client</name>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-            <version>3.5.3</version>
+            <version>3.5.5</version>
             <scope>provided</scope>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-oauth2-client -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-oauth2-client</artifactId>
-            <version>3.5.3</version>
+            <version>3.5.5</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -48,7 +48,7 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
-            <version>3.5.3</version>
+            <version>3.5.5</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
